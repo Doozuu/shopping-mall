@@ -30,5 +30,24 @@ export const db = getFirestore();
 export const createUserDocumentFromAuth = async (userAuth) => {
   const userDocRef = doc(db, "users", userAuth.uid);
   // doc(database, collections, unique identifier)
+
   const userSnapshot = await getDoc(userDocRef);
+
+  // user의 기존 정보가 없으면 document를 create, set 하기
+  if (!userSnapshot.exists()) {
+    const { displayName, email } = userAuth;
+    const createdAt = new Date();
+
+    try {
+      await setDoc(userDocRef, {
+        displayName,
+        email,
+        createdAt,
+      });
+    } catch (error) {
+      console.log(error.message);
+    }
+  }
+  // user 기존 정보가 있으면 그대로 실행
+  return userDocRef;
 };

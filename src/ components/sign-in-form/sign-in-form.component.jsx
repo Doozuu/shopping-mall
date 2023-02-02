@@ -28,6 +28,7 @@ const SignInForm = () => {
   const logGoogleUser = async () => {
     const { user } = await signInWithGooglePopup();
     await createUserDocumentFromAuth(user);
+    alert("Sign in Succeed");
   };
 
   const handleSubmit = async (event) => {
@@ -38,6 +39,7 @@ const SignInForm = () => {
         email,
         password
       );
+      alert("Sign in Succeed");
       resetFormFields();
     } catch (error) {
       switch (error.code) {

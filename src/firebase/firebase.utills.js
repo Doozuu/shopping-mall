@@ -7,6 +7,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   signOut,
+  onAuthStateChanged,
 } from "firebase/auth";
 import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore";
 
@@ -81,3 +82,9 @@ export const signInAuthUserWithEmailAndPassword = async (email, password) => {
 
 // 로그아웃
 export const SignOutUser = async () => await signOut(auth);
+
+// 자동으로 인증 변화 감지
+export const onAuthStateChangedListener = (callback) =>
+  onAuthStateChanged(auth, callback);
+// Observer Pattern
+// onAuthStateChanged(auth, callback, errorCallback, completedCallback);

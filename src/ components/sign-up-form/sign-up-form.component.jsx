@@ -8,7 +8,7 @@ import {
   createUserDocumentFromAuth,
 } from "../../firebase/firebase.utills";
 
-import { UserContext } from "../../contexts/user.context";
+// import { UserContext } from "../../contexts/user.context";
 
 import "./sign-up-form-styles.scss";
 
@@ -23,7 +23,7 @@ const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  const { setCurrentUser } = useContext(UserContext);
+  //  const { setCurrentUser } = useContext(UserContext);
 
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
@@ -43,7 +43,7 @@ const SignUpForm = () => {
         password
       );
 
-      setCurrentUser(user);
+      // setCurrentUser(user);
 
       await createUserDocumentFromAuth(user, { displayName });
       resetFormFields();
@@ -52,10 +52,13 @@ const SignUpForm = () => {
       switch (error.code) {
         case "auth/email-already-in-use":
           alert("Cannot create user, email already in use");
+          break;
         case "auth/weak-password":
           alert("Password should be at least 6 characters");
+          break;
         case "auth/invalid-email":
           alert("Invalid Email");
+          break;
         default:
           console.log(error);
       }

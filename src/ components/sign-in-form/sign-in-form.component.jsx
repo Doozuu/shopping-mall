@@ -1,7 +1,7 @@
 import { useState, useContext } from "react";
 
 import FormInput from "../form-input/form-input.component";
-import Button from "../button/button.component";
+import Button, { BUTTON_TYPE_CLASSES } from "../button/button.component";
 // import { UserContext } from "../../contexts/user.context";
 
 import {
@@ -86,8 +86,8 @@ const SignInForm = () => {
           <Button type="submit" children="Sign In" />
           <Button
             // button은 자동으로 submit 되기 때문에 handleSubmit함수가 실행되지 않도록 type="button"으로 지정해준다.
+            buttonType={BUTTON_TYPE_CLASSES.google}
             type="button"
-            buttonType="google"
             onClick={logGoogleUser}
             children="Google sign in"
           />

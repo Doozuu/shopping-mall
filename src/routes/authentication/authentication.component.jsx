@@ -8,7 +8,7 @@ import {
 import SignUpForm from "../../ components/sign-up-form/sign-up-form.component";
 import SignInForm from "../../ components/sign-in-form/sign-in-form.component";
 
-import "./authentication.styles.scss";
+import { AuthenticationContainer } from "./authentication.styles.jsx";
 
 const Authentication = () => {
   // 페이지 이동해서 로그인 진행하고 자동으로 원래 페이지로 돌아옴
@@ -29,10 +29,10 @@ const Authentication = () => {
   // </button>
 
   return (
-    <div className="authentication-container">
+    <AuthenticationContainer>
       <SignInForm />
       <SignUpForm />
-    </div>
+    </AuthenticationContainer>
   );
 };
 

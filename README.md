@@ -16,6 +16,14 @@ Firebase Authentication 활용
 <br/>
 useContext를 이용해 유저 정보 저장
 
+### Products
+카테고리별로 4개씩 미리보기가 주어지고, 제목을 클릭하면 상세 페이지로 이어진다.
+<img width="1196" alt="스크린샷 2023-02-17 오전 3 51 12" src="https://user-images.githubusercontent.com/104717341/219459968-d9994071-5144-4fe6-90a2-a01253bf875b.png">
+<img width="1184" alt="스크린샷 2023-02-17 오전 3 50 08" src="https://user-images.githubusercontent.com/104717341/219460217-daa4b566-2698-414a-8cfd-de42a58bcfcb.png">
+Firestore 활용.
+<br/>
+장바구니 담기 기능. 
+
 ### Cart
 <img width="288" alt="스크린샷 2023-02-15 오후 11 07 43" src="https://user-images.githubusercontent.com/104717341/219049723-e634c8e7-b090-4b74-98b3-9a0ed19c5c98.png">
 <img width="1166" alt="스크린샷 2023-02-16 오전 12 37 29" src="https://user-images.githubusercontent.com/104717341/219075560-02e55836-f38c-4b98-a6fe-8e72ff417e53.png">
@@ -28,9 +36,3 @@ useContext를 이용해 유저 정보 저장
 <br/>
 useContext를 이용해 장바구니 정보 저장
 <br/>
-
-### Products
-<img width="1227" alt="스크린샷 2023-02-15 오후 11 11 10" src="https://user-images.githubusercontent.com/104717341/219050600-f085f727-57a8-4e4f-b154-2e4e52749bce.png">
-Firestore 활용.
-<br/>
-장바구니 담기 기능. 

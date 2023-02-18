@@ -1,5 +1,7 @@
 # 🛒 의류 쇼핑몰 웹사이트
 
+### 사이트 주소 : https://astounding-axolotl-5f77cc.netlify.app
+
 ## 🖥 기술 스택
 
 React, SCSS -> styled-components, Redux(예정), Typescript(예정)

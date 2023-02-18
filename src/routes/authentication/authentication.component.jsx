@@ -4,7 +4,7 @@ import {
   auth,
   signInWithGoogleRedirect,
   createUserDocumentFromAuth,
-} from "../../firebase/firebase.utills";
+} from "../../utils/firebase/firebase.utills";
 import SignUpForm from "../../ components/sign-up-form/sign-up-form.component";
 import SignInForm from "../../ components/sign-in-form/sign-in-form.component";
 

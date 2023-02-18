@@ -6,7 +6,7 @@ import Button from "../button/button.component";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
-} from "../../firebase/firebase.utills";
+} from "../../utils/firebase/firebase.utills";
 
 // import { UserContext } from "../../contexts/user.context";
 

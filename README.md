@@ -2,11 +2,11 @@
 
 ### 사이트 주소 : https://astounding-axolotl-5f77cc.netlify.app
 
-## 🖥 기술 스택
+##  기술 스택
 
 React, SCSS -> styled-components, Redux(예정), Typescript(예정)
 
-## 📌 주요 기능
+##  주요 기능
 
 ### Auth
 <img width="1229" alt="스크린샷 2023-02-15 오후 11 07 08" src="https://user-images.githubusercontent.com/104717341/219049584-8c7e2d79-4a6f-4256-855d-3189d696f6ce.png">

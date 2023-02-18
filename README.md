@@ -2,7 +2,7 @@
 
 ## 🖥 기술 스택
 
-React, SCSS, Redux(예정), Typescript(예정), styled-components(예정)
+React, SCSS -> styled-components, Redux(예정), Typescript(예정)
 
 ## 📌 주요 기능
 

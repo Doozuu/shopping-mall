@@ -4,7 +4,7 @@
 
 ##  기술 스택
 
-React, SCSS -> styled-components, Redux(예정), Typescript(예정)
+React, SCSS -> styled-components, useContext & Reducer
 
 ##  주요 기능
 
@@ -38,3 +38,6 @@ Firestore 활용.
 <br/>
 useContext를 이용해 장바구니 정보 저장
 <br/>
+
+##  배포
+Netlify 활용.
